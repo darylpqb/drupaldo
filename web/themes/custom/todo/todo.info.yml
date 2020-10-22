@@ -1,0 +1,26 @@
+name: To-Do Theme
+type: theme
+description: Child theme of Bootstrap for To-Do website
+core: 8.x
+
+# Defines the base theme
+base theme: bootstrap
+
+# Defines libraries group in which we can add css/js.
+libraries:
+  - todo/global-styling
+  - todo/global-scripts
+
+# Regions copied from parent theme
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
