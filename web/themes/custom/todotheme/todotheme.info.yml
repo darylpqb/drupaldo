@@ -8,8 +8,8 @@ base theme: bootstrap
 
 # Defines libraries group in which we can add css/js.
 libraries:
-  - todo/global-styling
-  - todo/global-scripts
+  - todotheme/global-styling
+  - todotheme/global-scripts
 
 # Regions copied from parent theme
 regions:

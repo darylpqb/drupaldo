@@ -1,0 +1,13 @@
+// Styles targeting To-Do List module table specifically
+.todo-form {
+
+    table {
+
+        .checkbox {
+
+            input[type=checkbox] {
+                margin-left: initial;
+            }
+        }
+    }
+}
