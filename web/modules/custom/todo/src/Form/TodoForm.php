@@ -78,13 +78,16 @@ class TodoForm extends FormBase {
 
     $form['tasks'] = [
       '#type' => 'table',
-      '#header' => [$this->t('Task'), $this->t('Complete')],
+      '#header' => [$this->t('Complete'),$this->t('Task'), $this->t('Delete')],
       '#empty' => t('There are no tasks yet.'),
     ];
 
     /** @var \Drupal\node\Entity\Node $task */
     foreach ($tasks as $task) {
       $form['tasks']['todo-' . $task->id()] = [
+        'check' => [
+          '#type' => 'checkbox'
+        ],
         'title' => [
           '#markup' => $task->getTitle(),
         ],
