@@ -2,6 +2,6 @@ todo.page:
   path: '/todo'
   defaults:
     _form: '\Drupal\todo\Form\TodoForm'
-    _title: 'TODO'
+    _title: 'My Todo List'
   requirements:
     _permission: 'create todo_item content'
